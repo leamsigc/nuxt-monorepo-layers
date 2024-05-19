@@ -1,0 +1,9 @@
+.yarn/cache/*
+.gitignore
+gradle/
+node_modules/
+*.gradle
+dist/
+docker
+.nuxt
+./unlighthouse

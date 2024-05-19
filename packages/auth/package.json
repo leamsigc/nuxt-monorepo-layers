@@ -1,17 +1,20 @@
 {
   "name": "@local-monorepo/auth",
-  "private": false,
   "type": "module",
+  "version": "0.0.1",
+  "main": "./nuxt.config.ts",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "dev": "nuxi dev .playground",
+    "build": "nuxt build .playground",
+    "generate": "nuxt generate .playground",
+    "preview": "nuxt preview .playground",
+    "lint": "eslint .",
+    "postinstall": "nuxt prepare .playground"
   },
-  "dependencies": {
-    "nuxt": "^3.11.2",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.1.1",
+    "eslint": "^8.28.0",
+    "nuxt": "^3.6.2",
+    "typescript": "^4.9.3"
   }
 }
