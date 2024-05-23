@@ -11,7 +11,7 @@ const props = defineProps<LabelProps & { class?: string }>()
     :class="
       cn(
         'block text-sm tracking-tight font-medium text-foreground text-left',
-        props.class,
+        props.class
       )
     "
   >
