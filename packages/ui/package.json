@@ -16,17 +16,18 @@
     "@nuxt/fonts": "^0.7.0",
     "@nuxtjs/color-mode": "^3.4.1",
     "@nuxtjs/tailwindcss": "^6.12.0",
-    "nuxt-swiper": "^1.2.2",
-    "eslint": "^8.28.0",
+    "@tanstack/vue-table": "^8.11.2",
     "class-variance-authority": "^0.7.0",
+    "eslint": "^8.28.0",
+    "lightgallery": "^2.7.2",
     "nuxt": "^3.6.2",
     "nuxt-icon": "^0.6.10",
+    "nuxt-swiper": "^1.2.2",
     "radix-vue": "^1.8.0",
     "sass": "^1.77.2",
     "shadcn-nuxt": "^0.10.4",
-    "typescript": "^4.9.5",
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7",
-    "@tanstack/vue-table": "^8.11.2"
+    "typescript": "^4.9.5"
   }
 }

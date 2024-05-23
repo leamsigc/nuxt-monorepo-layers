@@ -10,16 +10,7 @@
  * @todo [ ] Integration test.
  * @todo [✔] Update the typescript.
  */
-import ListItem from "./NavigationMenuItem.vue";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/content/ui/navigation-menu";
+import { NavigationMenu, NavigationMenuList } from "@UI/components/ui/navigation-menu";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -89,22 +80,27 @@ const servicesOptions = [
         <section>
           <LogoMain />
         </section>
-        <button id="navbarToggler"
-          class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden navbarTogglerActive">
-          <span class="relative my-[6px] block h-[2px] w-[30px] bg-black dark:bg-white"></span>
-          <span class="relative my-[6px] block h-[2px] w-[30px] bg-black dark:bg-white"></span>
-          <span class="relative my-[6px] block h-[2px] w-[30px] bg-black dark:bg-white"></span>
+        <button
+          id="navbarToggler"
+          class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden navbarTogglerActive"
+        >
+          <span class="relative my-[6px] block h-[2px] w-[30px] bg-black dark:bg-white" />
+          <span class="relative my-[6px] block h-[2px] w-[30px] bg-black dark:bg-white" />
+          <span class="relative my-[6px] block h-[2px] w-[30px] bg-black dark:bg-white" />
         </button>
         <div class="ml-auto items-center space-x-4 hidden md:flex">
           <NavigationMenu>
             <NavigationMenuList>
               <NavLinkMain to="/about" label="About" />
-              <NavLinkDropdown label="Services" :listItems="components" />
-              <NavLinkDropdown label="Getting started" :listItems="servicesOptions">
+              <NavLinkDropdown label="Services" :list-items="components" />
+              <NavLinkDropdown label="Getting started" :list-items="servicesOptions">
                 <template #before>
                   <li class="row-span-3">
-                    <NavLinkCardChild to="/" title="Commercial Painting"
-                      description="Interior & exterior painting services">
+                    <NavLinkCardChild
+                      to="/"
+                      title="Commercial Painting"
+                      description="Interior & exterior painting services"
+                    >
                       <img src="/img/nav_image_1.png" alt="Exterior Painting" />
                     </NavLinkCardChild>
                   </li>
@@ -114,7 +110,9 @@ const servicesOptions = [
               <NavLinkMain to="/contact" label="Contact" />
             </NavigationMenuList>
           </NavigationMenu>
-          <ThemeSwitcher class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300" />
+          <ThemeSwitcher
+            class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300"
+          />
         </div>
       </div>
     </header>

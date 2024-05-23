@@ -14,7 +14,7 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   navigationMenuTriggerStyle,
-} from "@/components/content/ui/navigation-menu";
+} from "@UI/components/ui/navigation-menu";
 
 interface Props {
   to: string;
