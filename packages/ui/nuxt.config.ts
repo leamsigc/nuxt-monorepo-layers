@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { fileURLToPath } from "url";
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  alias: {
+    "@UI": fileURLToPath(new URL('./', import.meta.url))
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',

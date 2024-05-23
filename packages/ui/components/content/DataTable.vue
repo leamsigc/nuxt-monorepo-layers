@@ -26,7 +26,7 @@ import {
   getSortedRowModel,
   useVueTable,
 } from "@tanstack/vue-table";
-import { valueUpdater } from "@/lib/utils";
+import { valueUpdater } from "@UI/lib/utils";
 interface Props {
   caption?: string;
   data: [];

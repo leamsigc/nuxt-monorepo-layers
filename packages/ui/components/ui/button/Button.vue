@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Primitive, type PrimitiveProps } from 'radix-vue'
 import { buttonVariants } from '.'
-import { cn } from '@/lib/utils'
+import { cn } from '@UI/lib/utils'
 
 interface Props extends PrimitiveProps {
   variant?: NonNullable<Parameters<typeof buttonVariants>[0]>['variant']

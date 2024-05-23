@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { NavigationMenuList, type NavigationMenuListProps } from 'radix-vue'
-import { cn } from '@/lib/utils'
+import { cn } from '@UI/lib/utils'
 
 const props = defineProps<NavigationMenuListProps & { class?: string }>()
 </script>
@@ -9,10 +9,7 @@ const props = defineProps<NavigationMenuListProps & { class?: string }>()
   <NavigationMenuList
     v-bind="props"
     :class="
-      cn(
-        'group flex flex-1 list-none items-center justify-center space-x-1',
-        props.class,
-      )
+      cn('group flex flex-1 list-none items-center justify-center space-x-1', props.class)
     "
   >
     <slot />

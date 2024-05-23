@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useAttrs } from 'vue'
 import { useVModel } from '@vueuse/core'
-import { cn } from '@/lib/utils'
+import { cn } from '@UI/lib/utils'
 
 defineOptions({
   inheritAttrs: false,

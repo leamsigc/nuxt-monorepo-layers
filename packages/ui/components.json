@@ -11,6 +11,6 @@
   "framework": "nuxt",
   "aliases": {
     "components": "@/components",
-    "utils": "@/lib/utils"
+    "utils": "@UI/lib/utils"
   }
 }

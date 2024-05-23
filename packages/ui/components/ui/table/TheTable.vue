@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { cn } from '@/lib/utils'
+import { cn } from "@UI/lib/utils";
 
-const props = defineProps<{ class?: string }>()
+const props = defineProps<{ class?: string }>();
 </script>
 
 <template>

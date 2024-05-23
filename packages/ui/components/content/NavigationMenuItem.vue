@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { cn } from "@/lib/utils";
+import { cn } from "@UI/lib/utils";
 import { NavigationMenuLink } from "@/components/content/ui/navigation-menu";
 
 defineProps<{ title?: string; href?: string }>();

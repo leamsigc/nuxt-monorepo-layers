@@ -10,7 +10,7 @@
  * @todo [ ] Integration test.
  * @todo [✔] Update the typescript.
  */
-import { cn } from "@/lib/utils";
+import { cn } from "@UI/lib/utils";
 
 const isLoading = ref(false);
 const url = ref("");
