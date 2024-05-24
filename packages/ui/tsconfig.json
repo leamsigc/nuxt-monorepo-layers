@@ -1,8 +1,9 @@
 {
-  "extends": "./.playground/.nuxt/tsconfig.json",
+  "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "paths": {
       "@UI/*": ["./*"]
-    }
+    },
+    "moduleResolution": "Node"
   }
 }

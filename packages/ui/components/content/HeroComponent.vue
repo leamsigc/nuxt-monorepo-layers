@@ -21,33 +21,33 @@ const { alt, heroImageUrl, subTitle, title } = toRefs(props);
 </script>
 
 <template>
-  <section class="container mx-auto pb-12 px-4">
+  <section class="container mx-auto px-4 pb-12">
     <div
-      class="rounded-3xl z-0 min-h-[700px] grid relative bg-black dark:bg-slate-800 bg-opacity-90"
+      class="relative z-0 grid min-h-[700px] rounded-3xl bg-black bg-opacity-90 dark:bg-slate-800"
     >
       <NuxtImg
         :src="heroImageUrl"
-        class="absolute inset-0 h-full w-full opacity-30 rounded-3xl"
+        class="absolute inset-0 h-full w-full rounded-3xl opacity-30"
       />
-      <div class="mt-auto mb-20">
-        <div class="lg:px-12 md:py-36 relative rounded-3xl">
-          <div class="-mx-4 flex flex-wrap items-center mt-24 space-y-6 lg:space-y-0">
-            <div class="px-4 w-full md:w-8/12 xl:w-6/12">
-              <h1 class="flex-col justify-start items-start gap-6 flex mb-10">
+      <div class="mb-20 mt-auto">
+        <div class="relative rounded-3xl md:py-36 lg:px-12">
+          <div class="-mx-4 mt-24 flex flex-wrap items-center space-y-6 lg:space-y-0">
+            <div class="w-full px-4 md:w-8/12 xl:w-6/12">
+              <h1 class="mb-10 flex flex-col items-start justify-start gap-6">
                 <div
-                  class="dark:text-slate-300 text-slate-50 text-6xl font-bold capitalize leading-tight"
+                  class="text-6xl font-bold capitalize leading-tight text-slate-50 dark:text-slate-300"
                 >
                   {{ title }}
                 </div>
                 <div
-                  class="dark:text-slate-300 text-slate-50 text-lg font-normal leading-relaxed"
+                  class="text-lg font-normal leading-relaxed text-slate-50 dark:text-slate-300"
                 >
                   {{ subTitle }}
                 </div>
               </h1>
               <Button as-child class="rounded-full px-10 py-6">
                 <slot>
-                  <span class="inline-block mr-5 p-1.5 text-2xl uppercase font-black">
+                  <span class="mr-5 inline-block p-1.5 text-2xl font-black uppercase">
                     Call now
                   </span>
                   <Icon name="material-symbols:call-end" class="" size="24" />

@@ -73,21 +73,21 @@ const servicesOptions = [
 </script>
 
 <template>
-  <div class="top-0 left-0 z-40 flex items-center w-full bg-white dark:bg-black sticky">
+  <div class="sticky left-0 top-0 z-40 flex w-full items-center bg-white dark:bg-black">
     <header class="container">
-      <div class="relative flex items-center justify-between -mx-4">
+      <div class="relative -mx-4 flex items-center justify-between">
         <section>
           <LogoMain />
         </section>
         <button
           id="navbarToggler"
-          class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden navbarTogglerActive"
+          class="navbarTogglerActive absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
         >
           <span class="relative my-[6px] block h-[2px] w-[30px] bg-black dark:bg-white" />
           <span class="relative my-[6px] block h-[2px] w-[30px] bg-black dark:bg-white" />
           <span class="relative my-[6px] block h-[2px] w-[30px] bg-black dark:bg-white" />
         </button>
-        <div class="ml-auto items-center space-x-4 hidden md:flex">
+        <div class="ml-auto hidden items-center space-x-4 md:flex">
           <NavigationMenu>
             <NavigationMenuList>
               <NavLinkMain to="/about" label="About" />
@@ -110,7 +110,7 @@ const servicesOptions = [
             </NavigationMenuList>
           </NavigationMenu>
           <ThemeSwitcher
-            class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300"
+            class="hover:text-gray-700 dark:text-gray-100 dark:hover:text-gray-300"
           />
         </div>
       </div>

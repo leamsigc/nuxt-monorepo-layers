@@ -14,8 +14,7 @@
 
 <template>
   <div>
-    Hello
-    <ContentHeaderNav />
+    <ContentNavigationHeader />
   </div>
 </template>
 <style scoped></style>

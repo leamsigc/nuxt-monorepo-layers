@@ -25,11 +25,11 @@ const { title, subTitle, description } = toRefs(props);
       <div class="mx-auto mb-[60px] max-w-[485px] text-center">
         <span class="mb-2 block text-lg font-semibold text-primary"> {{ title }}</span>
         <h2
-          class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]"
+          class="text-dark mb-4 text-3xl font-bold dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]"
         >
           {{ subTitle }}
         </h2>
-        <p class="text-base text-body-color dark:text-dark-6">
+        <p class="text-body-color dark:text-dark-6 text-base">
           {{ description }}
         </p>
       </div>

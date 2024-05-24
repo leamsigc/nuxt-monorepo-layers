@@ -1,6 +1,6 @@
 import type { ColumnDef } from "@tanstack/vue-table";
-import { Checkbox } from "../components/ui/checkbox";
 
+import { Checkbox } from "../components/ui/checkbox";
 
 export const HeaderColumns: <T>() => ColumnDef<T>[] = () => [
   {
@@ -8,8 +8,7 @@ export const HeaderColumns: <T>() => ColumnDef<T>[] = () => [
     header: ({ table }) =>
       h(Checkbox, {
         checked: table.getIsAllPageRowsSelected(),
-        "onUpdate:checked": (value: boolean) =>
-          table.toggleAllPageRowsSelected(!!value),
+        "onUpdate:checked": (value: boolean) => table.toggleAllPageRowsSelected(!!value),
         ariaLabel: "Select all",
         class: "translate-y-[2px]",
       }),
@@ -35,9 +34,7 @@ export const HeaderColumns: <T>() => ColumnDef<T>[] = () => [
     accessorKey: "priority",
     header: ({ column }) => h("span", {}, "Priority"),
     cell: ({ row }) => {
-      return h("div", { class: "flex items-center" }, [
-        h("span", row.getValue("priority")),
-      ]);
+      return h("div", { class: "flex items-center" }, [h("span", row.getValue("priority"))]);
     },
     filterFn: (row, id, value) => {
       return value.includes(row.getValue(id));

@@ -3,27 +3,54 @@ import { fileURLToPath } from "url";
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   alias: {
-    "@UI": fileURLToPath(new URL('./', import.meta.url))
+    "@UI": fileURLToPath(new URL("./", import.meta.url)),
   },
   modules: [
-    'radix-vue',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
-    '@nuxt/fonts',
-    'nuxt-icon',
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
+    "@nuxt/fonts",
+    "nuxt-icon",
     "nuxt-swiper",
-    'shadcn-nuxt'
+    "@vueuse/nuxt",
+    "@samk-dev/nuxt-vcalendar",
+    "@vee-validate/nuxt",
+    "@morev/vue-transitions",
   ],
-  shadcn: {
-    /**
-     * Prefix for all the imported component
-     */
-    prefix: '',
-    /**
-     * Directory that the component lives in.
-     * @default "./components/ui"
-     */
-    componentDir: '../components/ui'
-  }
-})
+
+  components: {
+    global: true,
+    dirs: ["./components"],
+  },
+  tailwindcss: {
+    exposeConfig: true,
+  },
+
+  colorMode: {
+    classSuffix: "",
+  },
+
+  imports: {
+    imports: [
+      {
+        from: "tailwind-variants",
+        name: "tv",
+      },
+      {
+        from: "tailwind-variants",
+        name: "VariantProps",
+        type: true,
+      },
+      {
+        from: "vue-sonner",
+        name: "toast",
+        as: "useSonner",
+      },
+    ],
+  },
+
+  build: {
+    transpile: ["vue-sonner"],
+  },
+});

@@ -1,35 +1,36 @@
 <script lang="ts" setup>
-/**
- *
- * Main navigation link
- *
- * @author Reflect-Media <reflect.media GmbH>
- * @version 0.0.1
- *
- * @todo [ ] Test the component
- * @todo [ ] Integration test.
- * @todo [✔] Update the typescript.
- */
-import {
-  NavigationMenuItem,
-  NavigationMenuTrigger,
-  NavigationMenuContent,
-} from "@UI/components/ui/navigation-menu";
-import ListItem from "./NavigationMenuItem.vue";
+  /**
+   *
+   * Main navigation link
+   *
+   * @author Reflect-Media <reflect.media GmbH>
+   * @version 0.0.1
+   *
+   * @todo [ ] Test the component
+   * @todo [ ] Integration test.
+   * @todo [✔] Update the typescript.
+   */
+  import {
+    NavigationMenuContent,
+    NavigationMenuItem,
+    NavigationMenuTrigger,
+  } from "@UI/components/ui/navigation-menu";
 
-interface Props {
-  label?: string;
+  import ListItem from "./NavigationMenuItem.vue";
 
-  listItems: Array<{
-    title: string;
-    href: string;
-    description: string;
-  }>;
-}
-const props = withDefaults(defineProps<Props>(), {
-  listItems: () => [],
-});
-const { label, listItems } = toRefs(props);
+  interface Props {
+    label?: string;
+
+    listItems: Array<{
+      title: string;
+      href: string;
+      description: string;
+    }>;
+  }
+  const props = withDefaults(defineProps<Props>(), {
+    listItems: () => [],
+  });
+  const { label, listItems } = toRefs(props);
 </script>
 
 <template>

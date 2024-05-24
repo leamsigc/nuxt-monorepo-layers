@@ -1,25 +1,25 @@
 <script lang="ts" setup>
-/**
- *
- * Component Description:Desc
- *
- * @author Reflect-Media <reflect.media GmbH>
- * @version 0.0.1
- *
- * @todo [ ] Test the component
- * @todo [ ] Integration test.
- * @todo [✔] Update the typescript.
- */
-interface Props {
-  targetUrl: string;
-  title: string;
-  imgSrc: string;
-  date: string;
-  alt: string;
-}
+  /**
+   *
+   * Component Description:Desc
+   *
+   * @author Reflect-Media <reflect.media GmbH>
+   * @version 0.0.1
+   *
+   * @todo [ ] Test the component
+   * @todo [ ] Integration test.
+   * @todo [✔] Update the typescript.
+   */
+  interface Props {
+    targetUrl: string;
+    title: string;
+    imgSrc: string;
+    date: string;
+    alt: string;
+  }
 
-const props = defineProps<Props>();
-const { targetUrl, title, imgSrc, date, alt } = toRefs(props);
+  const props = defineProps<Props>();
+  const { targetUrl, title, imgSrc, date, alt } = toRefs(props);
 </script>
 
 <template>
@@ -30,7 +30,7 @@ const { targetUrl, title, imgSrc, date, alt } = toRefs(props);
       data-wow-delay=".1s"
       style="visibility: visible; animation-delay: 0.1s"
     >
-      <div class="mb-8 overflow-hidden rounded-[5px] min-h-40">
+      <div class="mb-8 min-h-40 overflow-hidden rounded-[5px]">
         <NuxtLink :href="targetUrl" class="block">
           <img
             :src="imgSrc"
@@ -48,7 +48,7 @@ const { targetUrl, title, imgSrc, date, alt } = toRefs(props);
         <h3>
           <a
             href="javascript:void(0)"
-            class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+            class="text-dark mb-4 inline-block text-xl font-semibold hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
           >
             {{ title }}
           </a>

@@ -26,23 +26,23 @@ const { CTAHelper, CTALabel, CTATitle, CTAUrl, subTitle, title } = toRefs(props)
 </script>
 
 <template>
-  <div class="px-16 bg-w py-20 grid grid-cols-2 gap-5 max-w-screen-2xl mx-auto">
+  <div class="bg-w mx-auto grid max-w-screen-2xl grid-cols-2 gap-5 px-16 py-20">
     <div class="">
-      <h1 class="flex-col justify-start items-start gap-6 flex">
-        <div class="text-black text-6xl font-bold">
+      <h1 class="flex flex-col items-start justify-start gap-6">
+        <div class="text-6xl font-bold text-black">
           {{ title }}
         </div>
-        <div class="text-black text-lg font-normal leading-relaxed">
+        <div class="text-lg font-normal leading-relaxed text-black">
           {{ subTitle }}
         </div>
       </h1>
-      <div class="pt-4 grid grid-cols-2 gap-2 mt-10">
+      <div class="mt-10 grid grid-cols-2 gap-2 pt-4">
         <div class="col-span-2 font-semibold">
           {{ CTATitle }}
         </div>
         <a
           :href="CTAUrl"
-          class="px-10 py-3 bg-black border border-black justify-center items-center flex text-white font-bold"
+          class="flex items-center justify-center border border-black bg-black px-10 py-3 font-bold text-white"
         >
           {{ CTALabel }}
         </a>

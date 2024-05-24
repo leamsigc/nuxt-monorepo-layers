@@ -4,30 +4,40 @@
   "version": "0.0.1",
   "main": "./nuxt.config.ts",
   "scripts": {
-    "dev": "nuxi dev .playground",
-    "build": "nuxt build .playground",
-    "generate": "nuxt generate .playground",
-    "preview": "nuxt preview .playground",
+    "dev": "nuxi dev ",
+    "build": "nuxt build ",
+    "generate": "nuxt generate ",
+    "preview": "nuxt preview",
     "lint": "eslint .",
-    "postinstall": "nuxt prepare .playground"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.1.1",
+    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
+    "@morev/vue-transitions": "^3.0.2",
+    "@nuxt/eslint-config": "^0.3.13",
     "@nuxt/fonts": "^0.7.0",
     "@nuxtjs/color-mode": "^3.4.1",
     "@nuxtjs/tailwindcss": "^6.12.0",
-    "@tanstack/vue-table": "^8.11.2",
+    "@samk-dev/nuxt-vcalendar": "^1.0.3",
+    "@tanstack/vue-table": "^8.17.3",
+    "@vee-validate/nuxt": "^4.12.8",
+    "@vueuse/nuxt": "^10.9.0",
     "class-variance-authority": "^0.7.0",
     "eslint": "^8.28.0",
     "lightgallery": "^2.7.2",
-    "nuxt": "^3.6.2",
+    "nuxt": "^3.11.2",
     "nuxt-icon": "^0.6.10",
     "nuxt-swiper": "^1.2.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
     "radix-vue": "^1.8.1",
     "sass": "^1.77.2",
-    "shadcn-nuxt": "^0.10.4",
-    "tailwind-merge": "^2.2.0",
+    "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "^4.9.5"
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "tailwind-variants": "^0.2.1",
+    "vaul-vue": "^0.1.2"
   }
 }

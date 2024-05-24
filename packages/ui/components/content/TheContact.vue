@@ -1,43 +1,43 @@
 <script lang="ts" setup>
-/**
- *
- *
- *
- * @author Reflect-Media <reflect.media GmbH>
- * @version 0.0.1
- *
- * @todo [ ] Test the component
- * @todo [ ] Integration test.
- * @todo [✔] Update the typescript.
- */
-interface Props {
-  title: string;
-  location: string;
-  email: string;
-  phone: string;
-}
-const props = defineProps<Props>();
-const { title, location, email, phone } = toRefs(props);
+  /**
+   *
+   *
+   *
+   * @author Reflect-Media <reflect.media GmbH>
+   * @version 0.0.1
+   *
+   * @todo [ ] Test the component
+   * @todo [ ] Integration test.
+   * @todo [✔] Update the typescript.
+   */
+  interface Props {
+    title: string;
+    location: string;
+    email: string;
+    phone: string;
+  }
+  const props = defineProps<Props>();
+  const { title, location, email, phone } = toRefs(props);
 </script>
 
 <template>
   <section class="relative py-20 md:py-[120px]">
     <div
-      class="absolute left-0 z-0 top-0 h-full w-full dark:bg-dark bg-slate-50 dark:bg-slate-900"
+      class="dark:bg-dark absolute left-0 top-0 z-0 h-full w-full bg-slate-50 dark:bg-slate-900"
     ></div>
     <div
-      class="absolute left-0 z-0 top-0 h-1/2 w-full dark:bg-dark-700 bg-lime-200 dark:bg-zinc-900 lg:h-[45%] xl:h-1/2"
+      class="dark:bg-dark-700 absolute left-0 top-0 z-0 h-1/2 w-full bg-lime-200 dark:bg-zinc-900 lg:h-[45%] xl:h-1/2"
     ></div>
-    <div class="container px-4 bg-transparent z-10">
-      <div class="-mx-4 flex flex-wrap items-center bg-transparent relative">
+    <div class="container z-10 bg-transparent px-4">
+      <div class="relative -mx-4 flex flex-wrap items-center bg-transparent">
         <div class="w-full px-4 lg:w-7/12 xl:w-8/12">
           <div class="ud-contact-content-wrapper">
             <div class="ud-contact-title mb-12 lg:mb-[150px]">
-              <span class="mb-6 block text-base font-medium text-dark dark:text-white">
+              <span class="text-dark mb-6 block text-base font-medium dark:text-white">
                 CONTACT US
               </span>
               <h2
-                class="max-w-[260px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white"
+                class="text-dark max-w-[260px] text-[35px] font-semibold leading-[1.14] dark:text-white"
               >
                 {{ title }}
               </h2>
@@ -55,10 +55,10 @@ const { title, location, email, phone } = toRefs(props);
                   </svg>
                 </div>
                 <div>
-                  <h5 class="mb-[18px] text-lg font-semibold text-dark dark:text-white">
+                  <h5 class="text-dark mb-[18px] text-lg font-semibold dark:text-white">
                     Our Location
                   </h5>
-                  <p class="text-base text-body-color dark:text-dark-6">
+                  <p class="text-body-color dark:text-dark-6 text-base">
                     {{ location }}
                   </p>
                 </div>
@@ -72,13 +72,13 @@ const { title, location, email, phone } = toRefs(props);
                   </svg>
                 </div>
                 <div>
-                  <h5 class="mb-[18px] text-lg font-semibold text-dark dark:text-white">
+                  <h5 class="text-dark mb-[18px] text-lg font-semibold dark:text-white">
                     How Can We Help?
                   </h5>
-                  <p class="text-base text-body-color dark:text-dark-6">
+                  <p class="text-body-color dark:text-dark-6 text-base">
                     {{ email }}
                   </p>
-                  <p class="mt-1 text-base text-body-color dark:text-dark-6">
+                  <p class="text-body-color dark:text-dark-6 mt-1 text-base">
                     {{ phone }}
                   </p>
                 </div>
@@ -88,73 +88,65 @@ const { title, location, email, phone } = toRefs(props);
         </div>
         <div class="w-full px-4 lg:w-5/12 xl:w-4/12">
           <div
-            class="wow fadeInUp rounded-lg bg-white dark:bg-slate-800 px-8 py-10 shadow-testimonial dark:bg-dark-2 dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
+            class="wow fadeInUp shadow-testimonial dark:bg-dark-2 rounded-lg bg-white px-8 py-10 dark:bg-slate-800 dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
             data-wow-delay=".2s
               "
             style="visibility: visible; animation-delay: 0.2s"
           >
             <h3
-              class="mb-8 text-2xl font-semibold text-dark dark:text-white md:text-[28px] md:leading-[1.42]"
+              class="text-dark mb-8 text-2xl font-semibold dark:text-white md:text-[28px] md:leading-[1.42]"
             >
               Send us a Message
             </h3>
             <form>
               <div class="mb-[22px]">
-                <label
-                  for="fullName"
-                  class="mb-4 block text-sm text-body-color dark:text-dark-6"
+                <label for="fullName" class="text-body-color dark:text-dark-6 mb-4 block text-sm"
                   >Full Name*</label
                 >
                 <input
                   type="text"
                   name="fullName"
                   placeholder="Adam Gelius"
-                  class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6"
+                  class="text-body-color placeholder:text-body-color/60 dark:border-dark-3 dark:text-dark-6 w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 focus:border-primary focus:outline-none"
                 />
               </div>
               <div class="mb-[22px]">
-                <label
-                  for="email"
-                  class="mb-4 block text-sm text-body-color dark:text-dark-6"
+                <label for="email" class="text-body-color dark:text-dark-6 mb-4 block text-sm"
                   >Email*</label
                 >
                 <input
                   type="email"
                   name="email"
                   placeholder="example@yourmail.com"
-                  class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6"
+                  class="text-body-color placeholder:text-body-color/60 dark:border-dark-3 dark:text-dark-6 w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 focus:border-primary focus:outline-none"
                 />
               </div>
               <div class="mb-[22px]">
-                <label
-                  for="phone"
-                  class="mb-4 block text-sm text-body-color dark:text-dark-6"
+                <label for="phone" class="text-body-color dark:text-dark-6 mb-4 block text-sm"
                   >Phone*</label
                 >
                 <input
                   type="text"
                   name="phone"
                   placeholder="+885 1254 5211 552"
-                  class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6"
+                  class="text-body-color placeholder:text-body-color/60 dark:border-dark-3 dark:text-dark-6 w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 focus:border-primary focus:outline-none"
                 />
               </div>
               <div class="mb-[30px]">
-                <label
-                  for="message"
-                  class="mb-4 block text-sm text-body-color dark:text-dark-6"
+                <label for="message" class="text-body-color dark:text-dark-6 mb-4 block text-sm"
                   >Message*</label
                 >
                 <textarea
                   name="message"
                   rows="1"
                   placeholder="type your message here"
-                  class="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6"
+                  class="text-body-color placeholder:text-body-color/60 dark:border-dark-3 dark:text-dark-6 w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 focus:border-primary focus:outline-none"
                 ></textarea>
               </div>
               <div class="mb-0">
                 <button
                   type="submit"
-                  class="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white dark:bg-black transition duration-300 ease-in-out hover:bg-blue-dark"
+                  class="hover:bg-blue-dark inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out dark:bg-black"
                 >
                   Send
                 </button>

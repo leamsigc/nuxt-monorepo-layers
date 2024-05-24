@@ -1,7 +1,8 @@
 #User Specific
 *.userprefs
 *.usertasks
-
+.data
+*/.data
 #Mono Project Files
 *.pidb
 *.resources

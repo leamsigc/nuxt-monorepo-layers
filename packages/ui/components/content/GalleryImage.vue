@@ -10,9 +10,10 @@
  * @todo [ ] Integration test.
  * @todo [✔] Update the typescript.
  */
-import Lightgallery from "lightgallery/vue";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
+import Lightgallery from "lightgallery/vue";
+
 import "lightgallery/scss/lightgallery.scss";
 
 interface Props {
@@ -34,7 +35,7 @@ const plugins = [lgThumbnail, lgZoom];
 </script>
 
 <template>
-  <section class="max-w-screen-2xl mx-auto px-14 py-20">
+  <section class="mx-auto max-w-screen-2xl px-14 py-20">
     <TheTitle :title="title" :subTitle="subTitle" :description="description" />
     <lightgallery
       :settings="{ speed: 500, plugins: plugins, pager: false, thumbnail: false }"
