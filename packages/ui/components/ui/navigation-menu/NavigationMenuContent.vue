@@ -1,15 +1,11 @@
 <script setup lang="ts">
-import {
-  NavigationMenuContent,
-  type NavigationMenuContentEmits,
-  type NavigationMenuContentProps,
-  useEmitAsProps,
-} from 'radix-vue'
-import { cn } from '@UI/lib/utils'
+import { NavigationMenuContent, useEmitAsProps } from "radix-vue";
+import { cn } from "@UI/lib/utils";
+import type { NavigationMenuContentEmits, NavigationMenuContentProps } from "radix-vue";
 
-const props = defineProps<NavigationMenuContentProps & { class?: string }>()
+const props = defineProps<NavigationMenuContentProps & { class?: string }>();
 
-const emits = defineEmits<NavigationMenuContentEmits>()
+const emits = defineEmits<NavigationMenuContentEmits>();
 </script>
 
 <template>

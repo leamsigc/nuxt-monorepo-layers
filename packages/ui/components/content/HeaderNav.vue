@@ -10,7 +10,6 @@
  * @todo [ ] Integration test.
  * @todo [✔] Update the typescript.
  */
-import { NavigationMenu, NavigationMenuList } from "@UI/components/ui/navigation-menu";
 
 const components: { title: string; href: string; description: string }[] = [
   {

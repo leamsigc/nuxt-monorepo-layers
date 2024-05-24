@@ -47,8 +47,8 @@ const { alt, heroImageUrl, subTitle, title } = toRefs(props);
               </h1>
               <Button as-child class="rounded-full px-10 py-6">
                 <slot>
-                  <span class="inline-block mr-5 p-1.5 text-2xl uppercase font-black"
-                    >Call now
+                  <span class="inline-block mr-5 p-1.5 text-2xl uppercase font-black">
+                    Call now
                   </span>
                   <Icon name="material-symbols:call-end" class="" size="24" />
                 </slot>

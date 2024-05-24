@@ -37,7 +37,9 @@ const { CTAHelper, CTALabel, CTATitle, CTAUrl, subTitle, title } = toRefs(props)
         </div>
       </h1>
       <div class="pt-4 grid grid-cols-2 gap-2 mt-10">
-        <div class="col-span-2 font-semibold">{{ CTATitle }}</div>
+        <div class="col-span-2 font-semibold">
+          {{ CTATitle }}
+        </div>
         <a
           :href="CTAUrl"
           class="px-10 py-3 bg-black border border-black justify-center items-center flex text-white font-bold"

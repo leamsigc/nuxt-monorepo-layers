@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import {
-  NavigationMenuTrigger,
-  type NavigationMenuTriggerProps,
-} from 'radix-vue'
-import { navigationMenuTriggerStyle } from '.'
-import { cn } from '@UI/lib/utils'
+import { NavigationMenuTrigger } from "radix-vue";
+import { navigationMenuTriggerStyle } from ".";
+import { cn } from "@UI/lib/utils";
+import type { NavigationMenuTriggerProps } from "radix-vue";
 
-const props = defineProps<NavigationMenuTriggerProps & { class?: string }>()
+const props = defineProps<NavigationMenuTriggerProps & { class?: string }>();
 </script>
 
 <template>

@@ -14,8 +14,8 @@
     "vue": "^3.4.27",
     "vue-router": "^4.3.2",
     "@local-monorepo/ui": "workspace:^",
-    "@local-monorepo/auth": "workspace:^",
     "@local-monorepo/content": "workspace:^",
+    "@local-monorepo/auth": "workspace:^",
     "@local-monorepo/mailing": "workspace:^"
   }
 }

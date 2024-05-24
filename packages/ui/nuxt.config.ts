@@ -7,12 +7,12 @@ export default defineNuxtConfig({
     "@UI": fileURLToPath(new URL('./', import.meta.url))
   },
   modules: [
+    'radix-vue',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/fonts',
     'nuxt-icon',
     "nuxt-swiper",
-    'radix-vue',
     'shadcn-nuxt'
   ],
   shadcn: {
