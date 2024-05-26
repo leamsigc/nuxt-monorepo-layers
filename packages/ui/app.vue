@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import type { MenuItem } from "@UI/types";
+
 /**
  *
  * Component Description:Desc
@@ -10,11 +12,106 @@
  * @todo [ ] Integration test.
  * @todo [✔] Update the typescript.
  */
+const callToActions: MenuItem[] = [
+  {
+    name: "Login",
+    href: "#",
+  },
+  {
+    name: "Register",
+    href: "#",
+    variant: "outline",
+  },
+];
+
+const MenuLinks: MenuItem[] = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Services",
+    href: "/services",
+    children: [
+      {
+        name: "Exterior Painting",
+        href: "/exterior-painting",
+        children: [
+          {
+            name: "About us",
+            description: "Learn more about our company and our team.",
+            icon: "lucide:flag",
+            href: "#",
+          },
+          {
+            name: "Careers",
+            description: "Join our team and help us build the future.",
+            icon: "lucide:briefcase",
+            href: "#",
+          },
+          {
+            name: "Contact us",
+            description: "Get in touch with our team.",
+            icon: "lucide:mail",
+            href: "#",
+          },
+        ],
+      },
+      {
+        name: "Interior Painting",
+        href: "/interior-painting",
+        children: [
+          {
+            name: "About us",
+            description: "Learn more about our company and our team.",
+            icon: "lucide:flag",
+            href: "#",
+          },
+          {
+            name: "Careers",
+            description: "Join our team and help us build the future.",
+            icon: "lucide:briefcase",
+            href: "#",
+          },
+          {
+            name: "Contact us",
+            description: "Get in touch with our team.",
+            icon: "lucide:mail",
+            href: "#",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "About",
+    href: "/about-us",
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
+];
+
+const ShortLinks: MenuItem[] = [
+  { name: "About us", href: "#" },
+  { name: "Press", href: "#" },
+  { name: "Careers", href: "#" },
+  { name: "Legal", href: "#" },
+  { name: "Support", href: "#" },
+  { name: "Contact", href: "#" },
+  { name: "Sitemap", href: "#" },
+  { name: "Cookie settings", href: "#" },
+];
 </script>
 
 <template>
   <div>
-    <ContentNavigationHeader />
+    <ContentNavigationHeader
+      :call-to-action="callToActions"
+      :menu="MenuLinks"
+      :short-links="ShortLinks"
+    />
   </div>
 </template>
 <style scoped></style>
