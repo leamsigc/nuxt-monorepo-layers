@@ -25,10 +25,10 @@ const { alt, heroImageUrl, subTitle, title } = toRefs(props);
     <div
       class="relative z-0 grid min-h-[700px] rounded-3xl bg-black bg-opacity-90 dark:bg-slate-800"
     >
-      <NuxtImg
+      <img
         :src="heroImageUrl"
         class="absolute inset-0 h-full w-full rounded-3xl opacity-30"
-      />
+      >
       <div class="mb-20 mt-auto">
         <div class="relative rounded-3xl md:py-36 lg:px-12">
           <div class="-mx-4 mt-24 flex flex-wrap items-center space-y-6 lg:space-y-0">
@@ -45,7 +45,7 @@ const { alt, heroImageUrl, subTitle, title } = toRefs(props);
                   {{ subTitle }}
                 </div>
               </h1>
-              <Button as-child class="rounded-full px-10 py-6">
+              <Button as-child class="rounded-full px-10 border-white" variant="primary">
                 <slot>
                   <span class="mr-5 inline-block p-1.5 text-2xl font-black uppercase">
                     Call now

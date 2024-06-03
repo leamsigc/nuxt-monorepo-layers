@@ -16,15 +16,16 @@ const { logoLink, menu, callToAction, shortLinks } = toRefs(props);
   <header class="z-20 border-b bg-background/90 backdrop-blur">
     <UiContainer class="flex h-16 items-center justify-between lg:h-20">
       <div class="flex items-center gap-10">
-        <NuxtLink :to="logoLink.href" class="flex items-center gap-3" v-if="logoLink">
+        <NuxtLink v-if="logoLink" :to="logoLink.href" class="flex items-center gap-3">
           <img
+            v-if="logoLink.src"
             :src="logoLink.src"
             fit="contain"
             :alt="logoLink.title"
             :title="logoLink.title"
             class="h-6 object-contain lg:h-8"
-          />
-          <span class="font-semibold lg:text-lg">{{ logoLink.title }}</span>
+          >
+          <span v-else class="font-semibold lg:text-lg">{{ logoLink.title }}</span>
         </NuxtLink>
         <UiNavigationMenu
           as="nav"
@@ -107,10 +108,10 @@ const { logoLink, menu, callToAction, shortLinks } = toRefs(props);
                   <div class="flex flex-col gap-2">
                     <template v-for="(item, index) in menu" :key="index">
                       <UiButton
+                        v-if="!item.children"
                         variant="ghost"
                         class="justify-start text-base"
                         :to="item.href"
-                        v-if="!item.children"
                       >
                         {{ item.name }}
                       </UiButton>
@@ -180,9 +181,9 @@ const { logoLink, menu, callToAction, shortLinks } = toRefs(props);
                     <UiGradientDivider class="my-5" />
 
                     <UiButton
-                      :to="link.href"
                       v-for="link in callToAction"
                       :key="link.name"
+                      :to="link.href"
                       :variant="link.variant"
                     >
                       {{ link.name }}
@@ -196,9 +197,9 @@ const { logoLink, menu, callToAction, shortLinks } = toRefs(props);
       </div>
       <div class="hidden items-center gap-3 lg:flex">
         <UiButton
-          :to="link.href"
           v-for="link in callToAction"
           :key="link.name"
+          :to="link.href"
           :variant="link.variant"
         >
           {{ link.name }}

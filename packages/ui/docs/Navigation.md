@@ -1,22 +1,13 @@
-<script lang="ts" setup>
-import type { MenuItem } from "@UI/types";
+# Documentation on how to use and set up the navigation
 
-/**
- *
- * Component Description:Desc
- *
- * @author Reflect-Media <reflect.media GmbH>
- * @version 0.0.1
- *
- * @todo [ ] Test the component
- * @todo [ ] Integration test.
- * @todo [✔] Update the typescript.
- */
+### Navigation `ContentNavigationHeader`
+
+
+The call to actions in the header of the navigation.
+
+```ts
+
 const callToActions: MenuItem[] = [
-  {
-    name: "Login",
-    href: "#",
-  },
   {
     name: "Register",
     href: "#",
@@ -24,6 +15,12 @@ const callToActions: MenuItem[] = [
   },
 ];
 
+```
+
+The actual menu items for the navigation.
+
+
+```ts
 const MenuLinks: MenuItem[] = [
   {
     name: "Home",
@@ -92,7 +89,13 @@ const MenuLinks: MenuItem[] = [
     href: "/contact",
   },
 ];
+```
 
+
+
+The ShortLinks for the mobile view:
+
+```ts
 const ShortLinks: MenuItem[] = [
   { name: "About us", href: "#" },
   { name: "Press", href: "#" },
@@ -103,24 +106,4 @@ const ShortLinks: MenuItem[] = [
   { name: "Sitemap", href: "#" },
   { name: "Cookie settings", href: "#" },
 ];
-</script>
-
-<template>
-  <div>
-    <ContentNavigationHeader
-      :call-to-action="callToActions"
-      :menu="MenuLinks"
-      :short-links="ShortLinks"
-      :logo-link="{ title: 'Rosa Mexican Restaurant', href: '/' }"
-    />
-    <ContentHeroComponent
-      :hero-image-url="'https://rosiesmexicancantina.com/wp-content/uploads/2022/09/Rosies-Mexican-Cantina_web_2022.jpg'"
-      title="Rosa Mexicana Cocina"
-      sub-title="We serve the best Mexican food in town. Homemade mexican food for all of our customers in the area of Huntsville Alabama"
-    >
-      Make a reservation
-      <Icon name="material-symbols:call-end" class="" size="24" />
-    </ContentHeroComponent>
-  </div>
-</template>
-<style scoped></style>
+```
