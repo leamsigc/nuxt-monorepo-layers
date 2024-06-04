@@ -13,7 +13,7 @@ const props = defineProps<Props>();
 const { logoLink, menu, callToAction, shortLinks } = toRefs(props);
 </script>
 <template>
-  <header class="z-20 border-b bg-background/90 backdrop-blur">
+  <header class="z-20 border-b bg-background/90 backdrop-blur relative">
     <UiContainer class="flex h-16 items-center justify-between lg:h-20">
       <div class="flex items-center gap-10">
         <NuxtLink v-if="logoLink" :to="logoLink.href" class="flex items-center gap-3">

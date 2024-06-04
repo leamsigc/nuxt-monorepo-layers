@@ -121,6 +121,39 @@ const ShortLinks: MenuItem[] = [
       Make a reservation
       <Icon name="material-symbols:call-end" class="" size="24" />
     </ContentHeroComponent>
+
+    <ContentTheTitle title="Rosies Mexican Cocina - Menu" sub-title="Our authentic Mexican dishes to satisfy every guest" class="mt-12" />
+    <div class="flex w-full justify-center">
+      <UiTabs class="container mx-auto" default-value="drinks">
+        <UiTabsList :pill="false" class="relative grid w-3/6 grid-cols-6">
+          <UiTabsTrigger :pill="false" value="drinks">
+            Drinks
+          </UiTabsTrigger>
+          <UiTabsTrigger :pill="false" value="desserts">
+            Desserts
+          </UiTabsTrigger>
+          <UiTabsIndicator />
+        </UiTabsList>
+        <UiTabsContent value="drinks">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12 container mx-auto">
+            <ContentMenuItem />
+            <ContentMenuItem />
+            <ContentMenuItem />
+            <ContentMenuItem />
+            <ContentMenuItem />
+          </div>
+        </UiTabsContent>
+        <UiTabsContent value="desserts">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12 container mx-auto">
+            <ContentMenuItem />
+            <ContentMenuItem />
+            <ContentMenuItem />
+            <ContentMenuItem />
+            <ContentMenuItem />
+          </div>
+        </UiTabsContent>
+      </UiTabs>
+    </div>
   </div>
 </template>
 <style scoped></style>
