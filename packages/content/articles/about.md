@@ -45,7 +45,7 @@ subTitle: "Small description about us Jahaziel's Carpentry & Painting"
 
 
 
-::Testimonials
+::TheTestimonials
 ---
 title:  Testimonials
 subTitle:  What our Clients Say  

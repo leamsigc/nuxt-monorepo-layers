@@ -20,9 +20,9 @@ const { title, subTitle, description } = toRefs(props);
 </script>
 
 <template>
-  <div class=" flex flex-wrap justify-center">
+  <div class="flex flex-wrap justify-center">
     <div class="w-full px-4">
-      <div class="mx-auto mb-[60px] max-w-[485px] text-center">
+      <div class="mx-auto mb-[60px] max-w-screen-sm text-center">
         <span class="mb-2 block text-lg font-semibold text-primary"> {{ title }}</span>
         <h2
           class="text-dark mb-4 text-3xl font-bold dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]"

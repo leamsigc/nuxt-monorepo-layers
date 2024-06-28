@@ -10,7 +10,6 @@
  * @todo [ ] Integration test.
  * @todo [✔] Update the typescript.
  */
-import { NavigationMenuLink } from "@UI/components/ui/navigation-menu";
 
 interface Props {
   to: string;

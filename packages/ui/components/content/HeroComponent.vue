@@ -23,11 +23,11 @@ const { alt, heroImageUrl, subTitle, title } = toRefs(props);
 <template>
   <section class="container mx-auto px-4 pb-12">
     <div
-      class="relative z-0 grid min-h-[700px] rounded-3xl bg-black bg-opacity-90 dark:bg-slate-800"
+      class="relative z-0 grid min-h-[700px] rounded-3xl md:bg-black bg-opacity-90 md:dark:bg-slate-800"
     >
       <img
         :src="heroImageUrl"
-        class="absolute inset-0 h-full w-full rounded-3xl opacity-30"
+        class="absolute inset-0 h-full w-full rounded-3xl opacity-30 hidden lg:block"
       >
       <div class="mb-20 mt-auto">
         <div class="relative rounded-3xl md:py-36 lg:px-12">

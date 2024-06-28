@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     "@samk-dev/nuxt-vcalendar",
     "@vee-validate/nuxt",
     "@morev/vue-transitions",
+    '@unlighthouse/nuxt',
   ],
 
   components: {

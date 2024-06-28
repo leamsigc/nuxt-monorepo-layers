@@ -20,12 +20,13 @@
     "@nuxtjs/tailwindcss": "^6.12.0",
     "@samk-dev/nuxt-vcalendar": "^1.0.3",
     "@tanstack/vue-table": "^8.17.3",
+    "@unlighthouse/nuxt": "^0.10.6",
     "@vee-validate/nuxt": "^4.12.8",
     "@vueuse/nuxt": "^10.9.0",
     "class-variance-authority": "^0.7.0",
     "eslint": "^8.28.0",
     "lightgallery": "^2.7.2",
-    "nuxt": "^3.11.2",
+    "nuxt": "^3.12.2",
     "nuxt-icon": "^0.6.10",
     "nuxt-swiper": "^1.2.2",
     "prettier": "^3.2.5",
@@ -38,6 +39,7 @@
   },
   "dependencies": {
     "tailwind-variants": "^0.2.1",
-    "vaul-vue": "^0.1.2"
+    "vaul-vue": "^0.1.2",
+    "vue-currency-input": "^3.1.0"
   }
 }

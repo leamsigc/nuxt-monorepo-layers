@@ -1,8 +1,8 @@
 ---
 layout: default
 navLabel: 'HOME'
-title: Expert Carpentry & Painting Services in Seattle, WA - Jahaziel's
-description: Discover precision carpentry and vibrant painting services in Seattle. Jahaziel's, your trusted partner in home enhancement.
+title: Rosa Mexican Cocina - Mexican Restaurant Huntsville alabama
+description: Serving you with the best Mexican food across Huntsville alabama, Rosa Mexican Cocina brings you a fine and festive atmosphere that the whole family will enjoy. Full of unique works of art, antiques from Old Mexico and fun music, your experience will be one to remember.
 draft: false
 navigation: true
 
@@ -18,26 +18,30 @@ head:
         class: ''
     meta:
         -   name: 'keywords'
-            content:  "Seattle, expert carpentry, vibrant painting, home enhancement, residential services, Jahaziel's Carpentry & Painting"
+            content:  "Rosa Mexican Cocina - Mexican Restaurant Huntsville alabama"
         -   name: 'robots'
             content: 'index, follow'
         -   name: 'author'
-            content: "Jahaziel's Carpentry & Painting"
+            content: "Rosa Mexican Cocina - Mexican Restaurant Huntsville alabama"
         -   name: 'description'
-            content:  "Discover precision carpentry and vibrant painting services in Seattle. Jahaziel's, your trusted partner in home enhancement."
+            content:  "Serving you with the best Mexican food across Huntsville alabama, Rosa Mexican Cocina brings you a fine and festive atmosphere that the whole family will enjoy. Full of unique works of art, antiques from Old Mexico and fun music, your experience will be one to remember."
 
+ogImage:
+  component: PostOg
+  image: /jarrito.png
 
 ---
+
 
 
 ::Hero-component
 ---
-alt: "Transform Your Home with Jahaziel's Craftsmanship"
-heroImageUrl: /img/nav_image_1.png
-title: "Transform Your Home with Jahaziel's Craftsmanship"
-subTitle: "Discover the magic of Jahaziel's Carpentry & Painting. From precise carpentry  that shapes your spaces to lively painting that brings your walls to life, we're here to turn your homeownership dreams into reality."
+alt: "Rosa Mexican Cocina - Mexican Restaurant Huntsville alabama"
+heroImageUrl: /jarrito.png
+title: "Rosa Mexican Cocina - Mexican Restaurant Huntsville Alabama"
+subTitle: "Serving you with the best Mexican food across Huntsville alabama, Rosa Mexican Cocina brings you a fine and festive atmosphere that the whole family will enjoy. Full of unique works of art, antiques from Old Mexico and fun music, your experience will be one to remember."
 ---
-<a href='tel:+1-555-555-5555'>
+<a href='tel:+1-256-559-5900'>
     <span class="inline-block mr-5 p-1.5 text-xl uppercase font-black">Call now </span>
      <Icon name="material-symbols:call-end" class="mb-1" size="24" />
 </a>
@@ -91,7 +95,7 @@ cards:
 ---
 ::
 
-::Testimonials
+::TheTestimonials
 ---
 title:  Testimonials
 subTitle:  What our Clients Say  

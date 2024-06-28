@@ -1,8 +1,10 @@
 const animate = require("tailwindcss-animate");
 const { fontFamily } = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-   darkMode: "class",
+import type { Config } from "tailwindcss";
+
+export default <Partial<Config>>{
+  darkMode: "class",
   theme: {
     extend: {
       container: {
@@ -17,7 +19,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Josefin Sans","Inter var", "Inter", ...fontFamily.sans],
+        sans: ["Josefin Sans", "Inter var", "Inter", ...fontFamily.sans],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -95,5 +97,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"),animate],
+  plugins: [require("tailwindcss-animate"), animate],
 };
