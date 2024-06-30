@@ -22,6 +22,8 @@ const { logoLink, menu, callToAction, shortLinks } = toRefs(props);
           <img
             v-if="logoLink.src"
             :src="logoLink.src"
+            width="40"
+            height="40"
             fit="contain"
             :alt="logoLink.title"
             :title="logoLink.title"
@@ -100,7 +102,7 @@ const { logoLink, menu, callToAction, shortLinks } = toRefs(props);
       <div class="lg:hidden">
         <UiSheet>
           <UiSheetTrigger as-child>
-            <UiButton variant="ghost" size="icon-sm">
+            <UiButton variant="ghost" size="icon-sm" name="Mobile menu" title="Mobile menu">
               <Icon name="lucide:menu" class="h-5 w-5" />
             </UiButton>
             <UiSheetContent class="w-[90%] p-0">

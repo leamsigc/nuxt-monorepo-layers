@@ -6,6 +6,7 @@
     "packages": "dotenv -- pnpm --filter",
     "site": "pnpm packages @local-monorepo/site",
     "content": "pnpm packages @local-monorepo/content build",
+    "content:start": "pnpm packages @local-monorepo/content start",
     "dev": "dotenv -- pnpm -r dev",
     "build": "dotenv -- pnpm -r build",
     "start": "pnpm --stream -r run dev",

@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-    extends: ["@local-monorepo/ui","@local-monorepo/content","@local-monorepo/auth","@local-monorepo/mailing",'@unlighthouse/nuxt',],
+    // extends: ["@local-monorepo/content","@local-monorepo/auth","@local-monorepo/mailing",'@unlighthouse/nuxt',],
 
   site: {
     url: 'https://rosamexicanrestauranthuntsville.com',

@@ -45,7 +45,9 @@ const { type, description, name, image, price, button } = toRefs(props);
         class="w-auto mx-auto transform transition duration-300 hover:scale-105 rounded filter  hover:grayscale-0 aspect-auto col-span-4"
         :src="image"
         :alt="name"
-      />
+        height="200"
+        width="100%"
+      >
     </div>
     <div class="flex flex-col items-center my-3 space-y-2 col-span-4">
       <h1 class="text-gray-900 dark:text-white poppins text-lg">
