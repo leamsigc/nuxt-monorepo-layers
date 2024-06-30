@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nuxi dev ",
     "build": "nuxt build ",
-    "generate": "nuxt generate ",
+    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "lint": "eslint .",
     "postinstall": "nuxt prepare"
@@ -35,7 +35,11 @@
     "sass": "^1.77.2",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "@tailwindcss/typography":"0.5.13",
+    "@vee-validate/zod":"4.13.1",
+    "@vueform/multiselect":"2.6.8",
+    "vue-sonner":"1.1.3"
   },
   "dependencies": {
     "tailwind-variants": "^0.2.1",

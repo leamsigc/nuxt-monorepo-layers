@@ -10,13 +10,7 @@
    * @todo [ ] Integration test.
    * @todo [✔] Update the typescript.
    */
-  import {
-    NavigationMenuContent,
-    NavigationMenuItem,
-    NavigationMenuTrigger,
-  } from "@UI/components/ui/navigation-menu";
 
-  import ListItem from "./NavigationMenuItem.vue";
 
   interface Props {
     label?: string;
