@@ -45,9 +45,9 @@ head:
 ---
 alt: "Rosa Mexicana Cocina - Mexican Restaurant Huntsville alabama"
 heroImageUrl: /jarrito.png
-title: "Rosa Mexicana Cocina - Mexican Restaurant Huntsville Alabama"
+title: "Rosa Mexicana Cocina - Mexican Restaurant in Huntsville, Alabama"
 href: "tel:+1-256-559-5900"
-subTitle: "Serving you with the best Mexican food across Huntsville alabama, Rosa Mexicana Cocina brings you a fine and festive atmosphere that the whole family will enjoy. Full of unique works of art, antiques from Old Mexico and fun music, your experience will be one to remember."
+subTitle: "Serving you with the best Mexican food across Huntsville, Alabama, Rosa Mexicana Cocina brings you a fine and festive atmosphere that the whole family will enjoy. Full of unique works of art, antiques from old Mexico and fun music, your experience will be one to remember."
 ---
 ::
 
@@ -56,8 +56,8 @@ subTitle: "Serving you with the best Mexican food across Huntsville alabama, Ros
 ::TheTestimonials
 ---
 title:  Testimonials
-subTitle:  What our Clients Say  
-description: Testimonials from our happy clients, we are happy when our client is happy.
+subTitle:  What Our Clients Say  
+description: Testimonials from satisfied, returning clients
 items:
   - desc: "I love the authentic flavors at this restaurant! Their tacos are amazing, especially the carne asada. Great service too!"
     title: "Fantastic Mexican Cuisine"
@@ -262,37 +262,37 @@ menu:
     menu:
       - type: "Entries / Platos"
         description: "Carnitas with rice, beans, salad, tortillas"
-        name: "Carnitas con arroz, frijol, ensalada y tortillas"
+        name: "Carnitas con arroz, frijoles, ensalada y tortillas"
         image: "/carnitas.png"
         price: "$16.99"
         button: "Order Now"
       - type: "Entries / Platos"
         description: "Grilled Steak with rice, beans, salad, tortillas"
-        name: "Carne asada con arroz, frijol, ensalada y tortillas"
+        name: "Carne asada con arroz, frijoles, ensalada y tortillas"
         image: "/grilled-steak.png"
         price: "$16.99"
         button: "Order Now"
       - type: "Entries / Platos"
         description: "Beef or Chicken Fajitas with rice, beans, salad, tortillas"
-        name: "Fajita de carne o pollo con arroz, frijol, ensalada y tortillas"
+        name: "Fajita de carne o pollo con arroz, frijoles, ensalada y tortillas"
         image: "/fajitas.png"
         price: "$16.99"
         button: "Order Now"
       - type: "Entries / Platos"
-        description: "T-Bone Steak with mushrooms, onions, jalapeños, rice, beans"
-        name: "T steak con hongos, cebolla, jalapeños, arroz, frijol"
+        description: "T-bone steak with mushrooms, onions, jalapeños, rice, beans"
+        name: "T-bone steak con champiñones, cebolla, jalapeños, arroz, frijoles"
         image: "/tbone-steak.png"
         price: "$18.99"
         button: "Order Now"
       - type: "Entries / Platos"
         description: "Chile Colorado with rice, beans, tortillas"
-        name: "Chile colorado con arroz, frijol y tortillas"
+        name: "Chile colorado con arroz, frijoles y tortillas"
         image: "/chile-colorado.png"
         price: "$16.99"
         button: "Order Now"
       - type: "Entries / Platos"
         description: "Molcajete (grilled steak, chicken breast, chorizo, shrimp, ribs, onions, cheese, chile, rice, beans, salad, tortillas)"
-        name: "MOLCAJETE (carne asada, pechuga, chorizo, camarón, costilla, cebolla, queso, chile, arroz, frijol, ensalada y tortillas)"
+        name: "MOLCAJETE (carne asada, pechuga, chorizo, camarón, costilla, cebolla, queso, chile, arroz, frijoles, ensalada y tortillas)"
         image: "/molcajete.png"
         price: "$25.99"
         button: "Order Now"
@@ -334,7 +334,7 @@ menu:
     menu:
       - type: "Memelas"
         description: "Memelas (order of three: one red, one green, one bean)"
-        name: "Memelas (uno rojo, uno verde, uno de frijol)"
+        name: "Memelas (uno rojo, uno verde, uno de frijoles)"
         image: "/memelas.png"
         price: "$12.00"
         button: "Order Now"
@@ -369,7 +369,7 @@ menu:
         button: "Order Now"
       - type: "Seafood / Mariscos"
         description: "Chipotle Shrimp Burrito with mushrooms, onions, chipotle sauce, rice, beans, salad"
-        name: "Burrito chipotle con camarón, hongos, cebolla, salsa chipotle, arroz, frijol, ensalada"
+        name: "Burrito chipotle con camarón, champinones, cebolla, salsa chipotle, arroz, frijoles, ensalada"
         image: "/chipotle-shrimp-burrito.png"
         price: "$19.99"
         button: "Order Now"

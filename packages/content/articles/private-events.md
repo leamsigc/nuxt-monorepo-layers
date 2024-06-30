@@ -2,7 +2,7 @@
 layout: blog-layout
 navLabel: 'PRIVATE_EVENTS'
 title: Private Events | Rosa Mexicana Cocina
-description: "Rosa Mexicana Cocina brings you the best Mexican food across Huntsville alabama, serving you with the best Mexican food across Huntsville alabama."
+description: "Rosa Mexicana Cocina brings you the best Mexican food across Huntsville,  Alabama, serving you with the best Mexican food across Huntsville,  Alabama."
 draft: false
 navigation: true
 
@@ -24,7 +24,7 @@ head:
         -   name: 'author'
             content: Private Events | Rosa Mexicana Cocina
         -   name: 'description'
-            content:  "Rosa Mexicana Cocina brings you the best Mexican food across Huntsville alabama, serving you with the best Mexican food across Huntsville alabama."
+            content:  "Rosa Mexicana Cocina brings you the best Mexican food across Huntsville,  Alabama, serving you with the best Mexican food across Huntsville,  Alabama."
         -   name: 'og:image'
             content: '/logo.png'
         -   name: 'twitter:image'
@@ -36,7 +36,7 @@ head:
         -   name: 'twitter:title'
             content: Private Events | Rosa Mexicana Cocina
         -   name: 'twitter:description'
-            content:  "Rosa Mexicana Cocina brings you the best Mexican food across Huntsville alabama, serving you with the best Mexican food across Huntsville alabama."
+            content:  "Rosa Mexicana Cocina brings you the best Mexican food across Huntsville,  Alabama, serving you with the best Mexican food across Huntsville,  Alabama."
 ---
 
 
@@ -45,12 +45,12 @@ head:
 ---
 alt: "Private Events | Rosa Mexicana Cocina"
 heroImageUrl: /oaxacan-mole.png
-title: "Private Events | Rosa Mexicana Cocina."
+title: "Private Events | Rosa Mexicana Cocina"
 href: "tel:+1-256-559-5900"
-subTitle: " Let's Celebrate With Us. Rosa Mexicana Cocina brings you the best Mexican food across Huntsville alabama, serving you with the best Mexican food across Huntsville alabama."
+subTitle: " Let's celebrate with us. Rosa Mexicana Cocina is serving you the best Mexican food across Huntsville, Alabama."
 ---
 <div>
-  Get in touch with our team.
+  Get in touch with our team
 </div>
 ::
 
@@ -58,7 +58,7 @@ subTitle: " Let's Celebrate With Us. Rosa Mexicana Cocina brings you the best Me
 ::TheTitle
 ---
 title: "Rosa Mexicana Cocina - Private Events"
-sub-title: "Let's Celebrate With Us, the best Mexican food across Huntsville alabama"
+sub-title: "Let's celebrate with us the best Mexican food across Huntsville,  Alabama"
 description: ""
 class: "mt-12"
 ---
@@ -71,7 +71,7 @@ services:
     title: "Celebrate With Us!"
     icon: ""
     description: >-
-      Celebrate Your Special Event at Rosa Mexicana Cocina in Huntsville, Alabama <br/>
+      Celebrate your special event at Rosa Mexicana Cocina in Huntsville, Alabama. <br/>
       <br/>
       Welcome to Rosa Mexicana Cocina, where every occasion becomes a memorable fiesta!
       Located in Huntsville's charming Huntsvillage, our vibrant and welcoming restaurant is the perfect venue for your next private event.

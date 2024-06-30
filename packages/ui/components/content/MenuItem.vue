@@ -42,7 +42,7 @@ const { type, description, name, image, price, button } = toRefs(props);
         {{ type }}
       </span>
       <img
-        class="w-auto mx-auto transform transition duration-300 hover:scale-105 rounded filter grayscale hover:grayscale-0 aspect-auto col-span-4"
+        class="w-auto mx-auto transform transition duration-300 hover:scale-105 rounded filter  hover:grayscale-0 aspect-auto col-span-4"
         :src="image"
         :alt="name"
       />

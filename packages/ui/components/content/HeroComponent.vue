@@ -37,15 +37,13 @@ const { alt, heroImageUrl, subTitle, title,href } = toRefs(props);
             <div class="w-full px-4 md:w-8/12 xl:w-6/12">
               <h1 class="mb-10 flex flex-col items-start justify-start gap-6">
                 <div
-                  class="text-6xl font-bold capitalize leading-tight text-slate-50 dark:text-slate-300"
-                >
-                  {{ title }}
-                </div>
+                  class="text-6xl font-bold leading-tight text-slate-50 dark:text-slate-300"
+                  v-html="title"
+                />
                 <div
                   class="text-lg font-normal leading-relaxed text-slate-50 dark:text-slate-300"
-                >
-                  {{ subTitle }}
-                </div>
+                  v-html="subTitle"
+                />
               </h1>
               <UiButton class="px-16 py-6" variant="outline" :href="href">
                 <slot>

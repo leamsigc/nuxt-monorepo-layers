@@ -16,7 +16,7 @@ MenuLinks:
             description: "Join our team and help us build the future."
             icon: "lucide:briefcase"
             href: "#"
-          - name: "Contact us"
+          - name: "Contact Us"
             description: "Get in touch with our team."
             icon: "lucide:mail"
             href: "tel:+1-256-559-5900"

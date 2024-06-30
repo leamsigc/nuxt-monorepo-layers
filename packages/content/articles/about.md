@@ -147,25 +147,25 @@ class: "mt-12"
 ---
 ::
 
-<div class='container prose mb-20'>
+<div class='container prose mb-20 dark:prose-invert dark:text-white dark:prose-headings:text-white'>
 
-**About Rosa Mexicana Cocina**
+#### About Rosa Mexicana Cocina
 
 Located in the heart of Huntsville, Alabama, Rosa Mexicana Cocina proudly brings the vibrant flavors and cultural heritage of Oaxaca, Mexico, to your table. Founded by passionate Oaxacan natives, our restaurant is a testament to authentic Mexican cuisine and warm hospitality.
 
-**Our Story**
+#### Our Story
 
 Rosa Mexicana Cocina was born from a deep love for Oaxacan culinary traditions. With a commitment to quality and a focus on family values, we opened our doors to share the rich flavors and diverse dishes that define Oaxacan cuisine. From traditional recipes passed down through generations to modern interpretations that cater to every palate, our menu showcases the best of Mexico's culinary diversity.
 
-**What We Offer**
+#### What We Offer 
 
 Experience the essence of Oaxaca through our meticulously crafted dishes, featuring homemade salsas, signature mole sauces, and fresh, local ingredients. Whether you're enjoying a casual meal with friends or celebrating a special occasion, our team ensures each visit is a journey through the vibrant flavors and warm hospitality of Mexico.
 
-**Community Involvement**
+#### Community Involvement 
 
 Beyond food, Rosa Mexicana Cocina is dedicated to enriching the Huntsville community. We actively participate in local events, support charitable initiatives, and strive to create a welcoming space where everyone can gather, share stories, and create memories.
 
-**Join Us**
+#### Join Us
 
 Discover why Rosa Mexicana Cocina is more than just a restaurant—it's a celebration of Oaxacan culture, flavors, and traditions. Come dine with us and experience the true taste of Mexico in Huntsville. We invite you to visit Rosa Mexicana Cocina and indulge in a culinary journey unlike any other.
 
