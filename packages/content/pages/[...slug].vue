@@ -12,7 +12,6 @@
  */
 
 const { page } = useContent();
-console.log(page.value);
 </script>
 
 <template>

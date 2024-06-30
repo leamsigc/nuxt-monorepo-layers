@@ -445,6 +445,43 @@ const contentRestaurantMenu = [
     ],
   },
 ];
+const features = [
+    {
+      title: "Share team inboxes",
+      icon: "",
+      description:
+        "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      points: [],
+      position: "right",
+    },
+    {
+      title: "Deliver instant answers",
+      icon: "heroicons:bolt",
+      description:
+        "An all-in-one customer service platform that helps you balance everything your customers need to be happy.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      points: [
+        { text: "Keep your customers in the loop with live chat" },
+        { text: "Embed help articles right on your website" },
+        { text: "Customers never have to leave the page to find an answer" },
+      ],
+    },
+    {
+      title: "Manage your team with reports",
+      icon: "heroicons:cursor-arrow-rays",
+      description: `Measure what matters with  easy-to-use reports. You can filter, export, and drill down on the data in a couple clicks.`,
+      imageUrl:
+        "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      points: [
+        { text: "Filter, export, and drilldown on the data quickly" },
+        { text: "Save, schedule, and automate reports to your inbox" },
+        { text: "Connect the tools you already use with 100+ integrations" },
+      ],
+    },
+  ];
 </script>
 
 <template>
@@ -477,6 +514,7 @@ const contentRestaurantMenu = [
       :menu="menuSpecial"
       default-value="day_specials_especial_del_dia"
     />
+    <ContentServicesComponent :services="features" />
   </div>
 </template>
 <style scoped></style>

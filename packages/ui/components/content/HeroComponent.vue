@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+
 /**
  *
  * The hero component
@@ -15,9 +16,10 @@ interface Props {
   heroImageUrl: string;
   title: string;
   subTitle: string;
+  href: string;
 }
 const props = defineProps<Props>();
-const { alt, heroImageUrl, subTitle, title } = toRefs(props);
+const { alt, heroImageUrl, subTitle, title,href } = toRefs(props);
 </script>
 
 <template>
@@ -27,7 +29,7 @@ const { alt, heroImageUrl, subTitle, title } = toRefs(props);
     >
       <img
         :src="heroImageUrl"
-        class="absolute inset-0 h-full w-full rounded-3xl opacity-30 hidden lg:block"
+        class="absolute inset-0 h-full w-full rounded-3xl opacity-20 hidden lg:block"
       >
       <div class="mb-20 mt-auto">
         <div class="relative rounded-3xl md:py-36 lg:px-12">
@@ -45,14 +47,14 @@ const { alt, heroImageUrl, subTitle, title } = toRefs(props);
                   {{ subTitle }}
                 </div>
               </h1>
-              <Button as-child class="rounded-full px-10 border-white" variant="primary">
+              <UiButton class="px-16 py-6" variant="outline" :href="href">
                 <slot>
-                  <span class="mr-5 inline-block p-1.5 text-2xl font-black uppercase">
+                  <span class="mr-5 inline-block p-1.5 text-xl uppercase">
                     Call now
                   </span>
-                  <Icon name="material-symbols:call-end" class="" size="24" />
+                  <Icon name="material-symbols:call-end" class="" :size="'24'" />
                 </slot>
-              </Button>
+              </UiButton>
             </div>
           </div>
         </div>

@@ -47,6 +47,7 @@ const { menu, defaultValue } = toRefs(props);
       >
         <UiTabsTrigger
           v-for="tab in menu"
+          :id="tab.value"
           :key="tab.value"
           :pill="false"
           :value="tab.value"
@@ -61,7 +62,7 @@ const { menu, defaultValue } = toRefs(props);
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12 container mx-auto"
         >
-          <ContentMenuItem
+          <MenuItem
             v-for="component in tab.menu"
             :key="component.name"
             v-bind="component"

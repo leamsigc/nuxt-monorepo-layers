@@ -97,5 +97,6 @@ export default <Partial<Config>>{
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), animate],
+  plugins: [require('@tailwindcss/typography'),require("tailwindcss-animate"), animate],
+  content: [],
 };

@@ -15,7 +15,7 @@ const props = defineProps<Props>();
 const { logoLink, menu, callToAction, shortLinks } = toRefs(props);
 </script>
 <template>
-  <header class="z-20 shadow-md bg-background/90 backdrop-blur sticky top-0">
+  <header class="z-20 shadow-md bg-background/30 backdrop-blur sticky top-0">
     <UiContainer class="flex h-16 items-center justify-between lg:h-20">
       <div class="flex items-center gap-10">
         <NuxtLink v-if="logoLink" :to="logoLink.href" class="flex items-center gap-3">
@@ -26,8 +26,8 @@ const { logoLink, menu, callToAction, shortLinks } = toRefs(props);
             :alt="logoLink.title"
             :title="logoLink.title"
             class="h-6 object-contain lg:h-8"
-          />
-          <span v-else class="font-semibold lg:text-lg">{{ logoLink.title }}</span>
+          >
+          <span class="font-semibold lg:text-lg">{{ logoLink.title }}</span>
         </NuxtLink>
         <UiNavigationMenu
           as="nav"
@@ -93,6 +93,9 @@ const { logoLink, menu, callToAction, shortLinks } = toRefs(props);
             </UiNavigationMenuItem>
           </UiNavigationMenuList>
         </UiNavigationMenu>
+      </div>
+      <div class="ml-auto">
+        <slot />
       </div>
       <div class="lg:hidden">
         <UiSheet>
