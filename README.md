@@ -46,3 +46,31 @@ pnpm build
 # app only
 pnpm site build
 ```
+
+
+
+Example use case:
+
+
+1. Rosa mexican Restaurant
+
+[Link](https://rosamexicanrestauranthuntsville.com/)
+Preview:
+
+Dark mode:
+![Preview](doc/RosaMexicanRestaurant.png)
+
+Light mode:
+![Preview](doc/RosaMexicanRestaurantLight.png)
+
+
+Menu:
+![Menu](doc/RMenu.png)
+
+
+Events:
+![Events](doc/Events.png)
+
+About:
+![Events](doc/About.png)
+
