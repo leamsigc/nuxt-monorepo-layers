@@ -1,3 +1,3 @@
-import twc from "@local-monorepo/ui/tailwind.config"
+import twc from "@local-monorepo/ui/tailwind.config";
 
-export default twc
+export default twc;

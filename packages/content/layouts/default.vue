@@ -31,14 +31,14 @@ const { data } = await useAsyncData('Navigation', () => queryContent('/').where(
   <div
     class="min-h-screen flex flex-col"
   >
-    <NavigationHeader
+    <NavigationHeaderSecondary
       :call-to-action="callToActions"
       :menu="data.MenuLinks"
       :short-links="data.ShortLinks"
-      :logo-link="{ title: 'Rosa Mexican Restaurant', href: '/', src: '/logo.png' }"
+      :logo-link="{ title: 'Mexican Goodies Europe', href: '/', src: '' }"
     >
       <ThemeSwitcher />
-    </NavigationHeader>
+    </NavigationHeaderSecondary>
     <slot />
   </div>
 </template>

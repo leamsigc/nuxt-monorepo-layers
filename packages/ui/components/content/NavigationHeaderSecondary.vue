@@ -15,22 +15,9 @@ const props = defineProps<Props>();
 const { logoLink, menu, callToAction, shortLinks } = toRefs(props);
 </script>
 <template>
-  <header class="z-20 shadow-md bg-background/30 backdrop-blur sticky top-0">
+  <header class="z-20  bg-background/0 backdrop-blur sticky top-0">
     <UiContainer class="flex h-16 items-center justify-between lg:h-20">
       <div class="flex items-center gap-10">
-        <NuxtLink v-if="logoLink" :to="logoLink.href" class="flex items-center gap-3">
-          <img
-            v-if="logoLink.src"
-            :src="logoLink.src"
-            width="40"
-            height="40"
-            fit="contain"
-            :alt="logoLink.title"
-            :title="logoLink.title"
-            class="h-6 object-contain lg:h-8"
-          >
-          <span class="font-semibold lg:text-lg">{{ logoLink.title }}</span>
-        </NuxtLink>
         <UiNavigationMenu
           as="nav"
           class="hidden items-center justify-start gap-8 lg:flex"
@@ -96,6 +83,19 @@ const { logoLink, menu, callToAction, shortLinks } = toRefs(props);
           </UiNavigationMenuList>
         </UiNavigationMenu>
       </div>
+      <NuxtLink v-if="logoLink" :to="logoLink.href" class="flex items-center gap-3 mx-auto">
+        <img
+          v-if="logoLink.src"
+          :src="logoLink.src"
+          width="40"
+          height="40"
+          fit="contain"
+          :alt="logoLink.title"
+          :title="logoLink.title"
+          class="h-6 object-contain lg:h-8"
+        >
+        <span class="font-black lg:text-2xl">{{ logoLink.title }}</span>
+      </NuxtLink>
       <div class="ml-auto">
         <slot />
       </div>
