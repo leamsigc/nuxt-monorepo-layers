@@ -62,6 +62,30 @@ class: "mt-12"
 ---
 ::
 
+::TheBundleList
+---
+bundle:
+  - name: "El Taquero"
+    description: "The best corn flour in town. ready to cook. You just put the comal the masa is ready."
+    image: "https://masienda.com/cdn/shop/products/set.tortillastarterkit.02_1700x.png"
+    price: "$120"
+    button: "Order Now"
+    to: "/bundle/tortillero"
+  - name: "La Senora de la Casa"
+    description: "Corn flour, beans, tortilla praser, Molcajete."
+    image: "https://masienda.com/cdn/shop/products/set.tortillastarterkit.02_1700x.png"
+    price: "$250"
+    button: "Order Now"
+    to: "/bundle/la-senora-de-la-casa"
+  - name: "El lechero"
+    description: "All the ingredient for the best champurrados"
+    image: "https://masienda.com/cdn/shop/products/set.tortillastarterkit.02_1700x.png"
+    price: "$120"
+    button: "Order Now"
+    to: "/bundle/tortillero"
+---
+::
+
 ::The-Contact
 ---
 title:  "Have a question?"

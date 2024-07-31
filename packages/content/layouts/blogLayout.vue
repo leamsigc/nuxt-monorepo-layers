@@ -44,7 +44,7 @@ const footer = {
       :call-to-action="callToActions"
       :menu="data.MenuLinks"
       :short-links="data.ShortLinks"
-      :logo-link="{ title: 'Rosa Mexican Restaurant', href: '/' }"
+      :logo-link="{ title: 'Mexican Goodies Europe', href: '/', src: '' }"
     >
       <ThemeSwitcher />
     </NavigationHeader>
