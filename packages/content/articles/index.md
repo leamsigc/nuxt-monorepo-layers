@@ -91,7 +91,7 @@ bundle:
 title:  "Have a question?"
 location: We have the base of operations in Germany
 email: help@mexican-goodies.com
-phone: 
+phone: ""
 showForm: false
 ---
 ::
