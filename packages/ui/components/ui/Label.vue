@@ -1,5 +1,9 @@
 <template>
-  <Label :class="styles({ class: props.class })" v-bind="reactiveOmit(props, 'class')">
+  <Label
+    v-bind="reactiveOmit(props, 'class')"
+    is="label"
+    :class="styles({ class: props.class })"
+  >
     <slot />
     <slot name="hint">
       <span v-if="hint">
@@ -10,18 +14,19 @@
 </template>
 
 <script lang="ts" setup>
-  import { Label } from "radix-vue";
-  import type { LabelProps } from "radix-vue";
+import { Label } from "radix-vue";
+import type { LabelProps } from "radix-vue";
 
-  const props = defineProps<
-    LabelProps & {
-      /** Custom class(es) to add to the label */
-      class?: any;
-      hint?: string;
-    }
-  >();
+const props = defineProps<
+  LabelProps & {
+    /** Custom class(es) to add to the label */
+    class?: any;
+    hint?: string;
+  }
+>();
 
-  const styles = tv({
-    base: "flex items-center justify-between text-[15px] font-medium leading-none hover:cursor-pointer peer-disabled:cursor-not-allowed peer-disabled:opacity-70 sm:text-sm",
-  });
+const styles = tv({
+  base:
+    "flex items-center justify-between text-[15px] font-medium leading-none hover:cursor-pointer peer-disabled:cursor-not-allowed peer-disabled:opacity-70 sm:text-sm",
+});
 </script>

@@ -1,3 +1,9 @@
 {
-  "extends": "./.playground/.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@AUTH/*": ["./*"]
+    },
+    "moduleResolution": "Node"
+  }
 }
