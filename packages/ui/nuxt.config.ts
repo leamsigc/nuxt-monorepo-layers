@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     "nuxt-swiper",
     "@vueuse/nuxt",
     "@samk-dev/nuxt-vcalendar",
-    "@vee-validate/nuxt",
+    '@vee-validate/nuxt',
     // "@morev/vue-transitions",
     '@unlighthouse/nuxt',
   ],
