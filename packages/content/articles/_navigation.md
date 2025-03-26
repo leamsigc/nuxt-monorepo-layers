@@ -19,7 +19,7 @@ MenuLinks:
           - name: "Contact Us"
             description: "Get in touch with our team."
             icon: "lucide:mail"
-            href: "tel:+1-256-559-5900"
+            href: "tel:+1-256-795-7423"
       - name: "Caterings"
         href: "#"
         children:
@@ -30,7 +30,7 @@ MenuLinks:
   - name: "About"
     href: "/about"
   - name: "Contact"
-    href: "tel:+1-256-559-5900"
+    href: "tel:+1-256-795-7423"
 
 ShortLinks:
   - name: "About us"
@@ -44,7 +44,7 @@ ShortLinks:
   - name: "Support"
     href: "#"
   - name: "Contact"
-    href: "tel:+1-256-559-5900"
+    href: "tel:+1-256-795-7423"
   - name: "Sitemap"
     href: "#"
   - name: "Cookie settings"

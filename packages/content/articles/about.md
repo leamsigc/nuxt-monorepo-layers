@@ -46,7 +46,7 @@ head:
 alt: "About Us | Rosa Mexicana Cocina"
 heroImageUrl: /oaxacan-mole.png
 title: "About Us | Rosa Mexicana Cocina."
-href: "tel:+1-256-559-5900"
+href: "tel:+1-256-795-7423"
 subTitle: " Let's Celebrate With Us. Located in the heart of Huntsville, Alabama, Rosa Mexicana Cocina proudly brings the vibrant flavors and cultural heritage of Oaxaca, Mexico, to your table, serving you with the best Mexican food across Huntsville alabama."
 ---
 <div>
@@ -177,7 +177,7 @@ Discover why Rosa Mexicana Cocina is more than just a restaurant—it's a celebr
 title:  "Visit our location and try our delicious food!"
 location: 4006 Drake Ave SW Huntsville, AL  35805
 email: help@rosamexicanrestauranthuntsville.com
-phone: tel:+1-256-559-5900
+phone: tel:+1-256-795-7423
 showForm: false
 ---
 ::

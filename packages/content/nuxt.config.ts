@@ -6,7 +6,9 @@ export default defineNuxtConfig({
   alias: {
     "@CONTENT": fileURLToPath(new URL("./", import.meta.url)),
   },
+
   extends: ["@local-monorepo/ui"],
+
   modules: [
     '@nuxt/content',
     'nuxt-content-assets',
@@ -14,6 +16,7 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
     '@unlighthouse/nuxt',
   ],
+
   content: {
     // ... options
     documentDriven: true,
@@ -25,14 +28,18 @@ export default defineNuxtConfig({
       },
     }
   },
+
   typescript: {
     shim: true,
     includeWorkspace:true
   },
+
   site: {
     url: 'https://rosamexicanrestauranthuntsville.com',
     name: 'Rosa Mexican Cocina',
     description: 'The best mexican around the Huntsville Area!',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
-  }
+  },
+
+  compatibilityDate: '2025-03-26'
 })

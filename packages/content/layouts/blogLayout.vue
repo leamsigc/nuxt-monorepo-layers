@@ -10,7 +10,7 @@
  * @todo [ ] Integration test.
  * @todo [✔] Update the typescript.
  */
- const callToActions:[] = [
+const callToActions: [] = [
   // {
   //   name: "Login",
   //   href: "#",
@@ -22,7 +22,7 @@
   // },
 ];
 
-const { data } = await useAsyncData('Navigation', () => queryContent('/').where({ _partial: true,title:"Navigation" }).findOne())
+const { data } = await useAsyncData('Navigation', () => queryContent('/').where({ _partial: true, title: "Navigation" }).findOne())
 
 const footer = {
   description: "Whether you're planning a birthday bash, anniversary celebration, rehearsal dinner, or corporate event, Rosa Mexicana Cocina offers a warm and inviting atmosphere that will make your guests feel right at home.",
@@ -31,7 +31,7 @@ const footer = {
   btns: [
     {
       label: "Call Us Now",
-      href: "tel:+1-256-559-5900",
+      href: "tel:+1-256-795-7423",
       variant: "outline",
     }
   ],
@@ -40,12 +40,8 @@ const footer = {
 
 <template>
   <div>
-    <NavigationHeader
-      :call-to-action="callToActions"
-      :menu="data.MenuLinks"
-      :short-links="data.ShortLinks"
-      :logo-link="{ title: 'Rosa Mexican Restaurant', href: '/' }"
-    >
+    <NavigationHeader :call-to-action="callToActions" :menu="data.MenuLinks" :short-links="data.ShortLinks"
+      :logo-link="{ title: 'Rosa Mexican Restaurant', href: '/' }">
       <ThemeSwitcher />
     </NavigationHeader>
     <slot />

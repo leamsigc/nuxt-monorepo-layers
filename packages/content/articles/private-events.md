@@ -46,7 +46,7 @@ head:
 alt: "Private Events | Rosa Mexicana Cocina"
 heroImageUrl: /oaxacan-mole.png
 title: "Private Events | Rosa Mexicana Cocina"
-href: "tel:+1-256-559-5900"
+href: "tel:+1-256-795-7423"
 subTitle: " Let's celebrate with us. Rosa Mexicana Cocina is serving you the best Mexican food across Huntsville, Alabama."
 ---
 <div>
